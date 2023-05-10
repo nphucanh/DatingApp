@@ -3,6 +3,8 @@
         "ASPNETCORE",
         "datepicker",
         "datingapp",
-        "devkit"
+        "devkit",
+        "hmac",
+        "HMACSHA"
     ]
 }
