@@ -10,23 +10,12 @@ import { User } from './_models/user';
 })
 export class AppComponent implements OnInit{
   title = 'Hotel Management App';
-  users:  any;
 
-  constructor(private http:HttpClient, private accountService: AccountService){}
+  constructor (private accountService: AccountService){}
 
   ngOnInit(): void {
-    this.getUser();
     this.setCurrentUser();
   }
-
-  getUser() {
-    this.http.get('https://localhost:5001/api/users').subscribe({
-      next: response => this.users = response,
-      error: error => console.log(error),
-      complete: () => console.log('Request has completed')
-    })  
-  }
-
   setCurrentUser() {
     const userString = localStorage.getItem('user');
     if (!userString) return;
