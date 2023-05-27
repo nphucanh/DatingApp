@@ -7,6 +7,7 @@
         "devkit",
         "hmac",
         "HMACSHA",
+        "titlecase",
         "toastr"
     ]
 }
