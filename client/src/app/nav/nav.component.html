@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <form *ngIf="!(accountService.currentUser$ | async)" #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+        <form *ngIf="!(accountService.currentUser$ | async)" #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="on">
           <input 
           name="username" 
           [(ngModel)]="model.username" 

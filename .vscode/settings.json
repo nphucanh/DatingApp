@@ -7,6 +7,9 @@
         "devkit",
         "hmac",
         "HMACSHA",
+        "Jwtr",
+        "kolkov",
+        "tabset",
         "titlecase",
         "toastr"
     ]
