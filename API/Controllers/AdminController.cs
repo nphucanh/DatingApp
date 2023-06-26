@@ -27,7 +27,7 @@ namespace API.Controllers
                     Roles = u.UserRoles.Select(r => r.Role.Name).ToList()
                 })
                 .ToListAsync();
-
+            
             return Ok(users);
         }
 
